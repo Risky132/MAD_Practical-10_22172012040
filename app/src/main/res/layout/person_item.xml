@@ -5,38 +5,87 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <com.google.android.material.card.MaterialCardView
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
-        app:cardCornerRadius="30dp"
-        app:cardElevation="30dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginTop="20dp">
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="80dp" >
 
-        <androidx.constraintlayout.widget.ConstraintLayout
+        <com.google.android.material.card.MaterialCardView
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="30dp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="23dp"
+            tools:layout_editor_absoluteY="33dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:id="@+id/textView_name"
+                android:text="Roshan"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="17dp"
+                android:text="+919023397814"
+                android:id="@+id/textView_no"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="32dp"
+                android:text="tadvirisky@gmail.com"
+                android:id="@+id/textView_email"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="48dp"
+                android:text="Narmada-393151"
+                android:id="@+id/textView_address"/>
+
 
 
             <com.google.android.material.button.MaterialButton
-                android:id="@+id/btn1"
-                android:layout_width="80dp"
-                android:layout_height="90dp"
+                android:id="@+id/button"
+
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="8dp"
                 app:icon="@drawable/baseline_person_24"
-                app:iconSize="50dp"
-                tools:layout_editor_absoluteX="16dp"
-                tools:layout_editor_absoluteY="0dp" />
+                app:iconSize="30dp"
+                app:iconGravity="start"/>
+
 
             <com.google.android.material.button.MaterialButton
-                android:layout_width="80dp"
-                android:id="@+id/btn2"
-                android:layout_height="90dp"
+                android:id="@+id/button2"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="280dp"
+                android:layout_marginTop="8dp"
                 app:icon="@drawable/baseline_location_on_24"
-                app:iconSize="50dp"
-                tools:layout_editor_absoluteX="275dp"
-                tools:layout_editor_absoluteY="0dp" />
-        </androidx.constraintlayout.widget.ConstraintLayout>
-    </com.google.android.material.card.MaterialCardView>
+                app:iconSize="30dp"
+                app:iconGravity="start"/>
+
+
+        </com.google.android.material.card.MaterialCardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
